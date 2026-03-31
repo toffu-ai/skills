@@ -1,0 +1,47 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Create package.json
+        run: |
+          echo '{
+            "name": "skills-validator",
+            "private": true,
+            "dependencies": {
+              "gray-matter": "^4.0.3",
+              "ajv-cli": "^5.0.0"
+            }
+          }' > package.json
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Extract and validate frontmatter
+        run: |
+          mkdir -p tmp
+
+          for file in skills/*.md; do
+            echo "Validating $file..."
+            node -e "
+              const matter = require('gray-matter');
+              const fs = require('fs');
+              const file = matter.read('$file');
+              fs.writeFileSync('tmp/$(basename ${file%.md}).json', JSON.stringify(file.data, null, 2));
+            "
+            npx ajv validate -s schema.json -d "tmp/$(basename ${file%.md}).json"
+          done

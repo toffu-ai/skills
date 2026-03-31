@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "title", "description", "tags", "author", "category"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique identifier for the skill, using lowercase letters, numbers, and hyphens"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Human-readable title of the skill"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Short description of what knowledge this skill provides"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "List of tags for categorizing the skill"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["brand", "audience", "competitors", "channels", "reporting", "content", "analytics", "advertising", "seo", "social", "email", "strategy"],
+      "description": "Primary category for the skill"
+    },
+    "author": {
+      "type": "object",
+      "required": ["name", "profile_url"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Author's full name"
+        },
+        "pic_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to author's profile picture"
+        },
+        "profile_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to author's profile (e.g., LinkedIn)"
+        }
+      }
+    }
+  }
+}
