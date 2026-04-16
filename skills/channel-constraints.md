@@ -1,12 +1,12 @@
 ---
 id: channel-constraints
 title: Channel Constraints
-description: Defines approved marketing channels, formats, and platform-specific rules
+description: Defines which marketing channels to use, how to prioritize them, and platform-specific rules
 tags:
   - channels
   - distribution
   - social
-  - content
+  - ads
 category: channels
 author:
   name: Toffu
@@ -14,37 +14,46 @@ author:
   profile_url: https://toffu.ai
 ---
 
-## Approved Channels
+## Active Channels
 
-Organic acquisition only. Focus all efforts on these channels:
+Focus efforts on these channels in priority order:
 
-1. **SEO** — Blog content, landing pages, programmatic pages
-2. **LinkedIn** — Primary social channel
-3. **Email** — Newsletter and nurture sequences
-4. **Podcast** — Guest appearances and owned show
+1. **Google Ads** - Primary paid acquisition channel. Brand, non-brand search, and Shopping.
+2. **Meta Ads** - Primary paid social channel. Prospecting and retargeting.
+3. **LinkedIn** - Organic content and paid ads for B2B audiences.
+4. **Google Analytics / Search Console** - Performance tracking and search visibility.
+
+## Secondary Channels
+
+Use when primary channels are performing and there's budget to expand:
+
+- **Bing Ads** - Lower CPCs, older/higher-income demographic. Mirror top Google campaigns.
+- **LinkedIn Ads** - B2B lead gen. High CPCs but strong intent.
+- **TikTok Ads** - DTC and younger audiences. Creative-heavy.
+- **Twitter/X** - Brand awareness and engagement. Low conversion intent.
+- **Reddit** - Community engagement and social listening. Not a direct response channel.
 
 ## Platform-Specific Rules
 
-### LinkedIn
-- Use LinkedIn-native formats: carousels, text posts, polls
-- No external links in post body — put links in the first comment
-- Optimal post length: 800–1,200 characters
-- Post frequency: 3–5 times per week
+### Google Ads
+- Separate brand and non-brand campaigns. Always.
+- Never run broad match without a strong negative keyword list.
+- Performance Max needs brand exclusions or it will cannibalize brand search.
 
-### Email
-- Subject line max: 50 characters
-- Preview text: always customize, don't leave default
-- One CTA per email
-- Send frequency: max 2 per week for newsletter, 1 per day for nurture
+### Meta Ads
+- Creative is the primary lever. When performance drops, refresh creative before changing audiences.
+- Exclude Audience Network on conversion campaigns by default.
+- Advantage+ audience expansion will spend outside your targeting. Monitor it.
 
-### SEO
-- Target keywords with 100+ monthly search volume
-- Every blog post needs a clear search intent match
-- Internal linking: minimum 3 internal links per post
+### LinkedIn (Organic)
+- No external links in the post body - put links in the first comment.
+- Post frequency: 3-5 times per week. Tuesday-Thursday gets highest engagement.
+- Text posts and carousels outperform link posts for engagement.
 
 ## Channels to Avoid
 
-- Twitter/X — low ROI for B2B SaaS
-- TikTok — audience mismatch
-- Paid ads — not in current strategy
-- Reddit — only for community engagement, not promotion
+Customize this list based on your business. These are common exclusions:
+
+- Any channel where you can't measure ROI back to revenue or leads
+- Any channel that requires dedicated headcount you don't have
+- Platforms where your audience isn't active, regardless of how trendy they are
