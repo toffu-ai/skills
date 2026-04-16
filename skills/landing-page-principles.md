@@ -1,7 +1,7 @@
 ---
 id: landing-page-principles
 title: Landing Page Principles
-description: Rules for writing landing page copy that converts visitors into leads or customers
+description: What actually converts on landing pages - beyond templates and best practice listicles
 tags:
   - copywriting
   - landing-page
@@ -14,32 +14,30 @@ author:
   profile_url: https://toffu.ai
 ---
 
-Apply these rules when writing or reviewing landing page copy.
+Apply these principles when writing or evaluating landing page copy.
 
-## Hierarchy
+## What Converts
 
-1. **Headline** - One clear benefit. Under 10 words. Answers "why should I care?"
-2. **Subheadline** - One sentence explaining how the product delivers that benefit
-3. **Social proof** - Logos, user count, or a short testimonial near the top
-4. **Problem** - Articulate the pain the visitor is experiencing. Use their language.
-5. **Solution** - How the product solves it. Mirror the problem structure.
-6. **How it works** - 3 steps max. Keep it simple.
-7. **Testimonial** - Full quote with name, title, company
-8. **CTA** - Same CTA as the hero. Restate the value prop.
+- Specificity converts. "Save 10 hours a week on reporting" outperforms "Save time on reporting." "Used by 2,400 agencies" outperforms "Trusted by thousands." Every vague claim is a missed opportunity to build conviction.
+- The headline's job is to make the visitor feel understood, not impressed. "Still pulling reports from 6 different dashboards?" resonates more than "The All-In-One Marketing Platform" because it mirrors the visitor's actual experience.
+- Social proof should match the visitor. A Fortune 500 logo wall alienates small businesses. A testimonial from a 10-person agency resonates with other agencies. Segment your social proof by traffic source when possible.
+- The page should answer one question: "Is this for me?" Everything that doesn't help the visitor answer that question is friction.
 
-## Writing Rules
+## What Kills Conversion
 
-- Headlines grab attention, subheadlines do the explaining. Don't overload the headline.
-- CTA buttons use action verbs: "Start Free Trial" not "Submit" or "Learn More"
-- Write at an 8th grade reading level. Short sentences. Simple words.
-- Focus on "you" - what the visitor gets. Minimize "we" language.
-- One idea per section. Don't overload any block.
-- Benefit-driven, not feature-driven: "Save 10 hours a week" not "Automated reporting tool"
+- Navigation on a landing page bleeds 10-30% of visitors to other pages before they convert. Remove the top nav. The only clickable elements should be CTAs.
+- Asking for too much information too early. Every form field reduces completion by 5-10%. Name and email is the maximum for top-of-funnel. Save the phone number and company size for post-conversion qualification.
+- Mismatched messaging between ad and landing page. If the ad says "free audit" and the landing page leads with product features, you've broken the promise. Mirror the ad's exact language in the hero section.
+- Long pages with no visual anchors. People don't read landing pages - they scan. Every scroll-depth should have a heading that could stand alone as a reason to convert. If someone scrolls to the middle and reads one header, that header alone should be compelling.
 
-## What to Avoid
+## CTA Principles
 
-- Multiple competing CTAs on the same page
-- Navigation links that take visitors away from the conversion goal
-- Generic stock photos that don't relate to the product
-- Walls of text without visual breaks
-- Making claims without proof (testimonials, numbers, screenshots)
+- CTAs describe what the visitor gets, not what they do. "Get My Free Audit" outperforms "Submit." "Start Saving Time" outperforms "Sign Up." The button text is the final micro-commitment before conversion - make it feel worthwhile.
+- Place the primary CTA above the fold AND after every major argument section. People convert at different points in their decision process. Give them the option everywhere.
+- Secondary CTAs ("See a demo" / "Compare plans") catch visitors who aren't ready for the primary action. Better to capture them lower-commitment than to lose them entirely.
+
+## Testing Reality
+
+- Most landing page tests fail because the variations aren't different enough. Changing button color doesn't move revenue. Changing the headline, offer, or social proof does.
+- Don't test on pages with under 1,000 monthly visitors. You won't reach statistical significance in any reasonable timeframe. Just pick the best version based on experience and move on.
+- Test the offer before the copy. "Free trial" vs. "free audit" vs. "live demo" will move conversion rate more than any copywriting tweak.

@@ -1,7 +1,7 @@
 ---
 id: email-marketing-rules
 title: Email Marketing Rules
-description: Rules for writing and structuring marketing emails - newsletters, nurture sequences, and announcements
+description: How email actually works at scale - deliverability, segmentation, and what moves revenue
 tags:
   - email
   - newsletter
@@ -16,37 +16,29 @@ author:
 
 Apply these rules whenever writing or reviewing marketing emails.
 
-## Subject Lines
+## Deliverability Is the Whole Game
 
-- Under 50 characters
-- No clickbait, no ALL CAPS, no excessive punctuation
-- Preview text: always customize. Never leave the platform default.
-- Personalize when data is available (first name, company name)
+- Nothing else matters if you're landing in spam. Monitor inbox placement rate, not just send/delivery rate. "Delivered" means it reached the server, not the inbox.
+- Gmail and Yahoo's 2024 sender requirements are table stakes: authenticated domain (SPF, DKIM, DMARC), visible unsubscribe, under 0.3% spam complaint rate. Violate these and your entire domain gets throttled, not just the offending campaign.
+- Clean your list quarterly. Anyone who hasn't opened in 90 days goes to a re-engagement segment. Anyone who hasn't opened in 180 days gets removed. A smaller, engaged list outperforms a large, dead one every time. ISPs watch engagement ratios.
+- Warm up new sending domains slowly. Start with your most engaged segment (recent purchasers, frequent openers). Scale volume by 20-30% per day. Skip this and you'll hit spam traps on day one.
 
-## Structure
+## What Actually Drives Revenue
 
-- One CTA per email. One. If you have two things to promote, send two emails.
-- Keep body copy under 200 words. People scan, they don't read.
-- Use short paragraphs (2-3 sentences max) and line breaks for readability
-- Put the most important information in the first 2 sentences
-- Plain text style works better for most B2B emails. Save heavy HTML for product launches.
+- Automated flows (welcome, cart abandonment, post-purchase, winback) generate 30-50% of email revenue from 5% of the sends. Optimize these before touching your campaign calendar.
+- Cart abandonment emails have the highest ROI of any email type. Three emails over 48 hours (1h, 24h, 48h) with escalating urgency. First email is a reminder, second adds social proof, third adds scarcity or incentive.
+- Segmentation is the difference between 0.5% click rate and 5% click rate. "Blast the whole list" is not a strategy. Segment by purchase behavior, engagement level, and lifecycle stage at minimum. A lapsed customer and a first-time buyer should never receive the same email.
+- Plain text-style emails from a person ("Sarah from Acme") outperform designed HTML templates for B2B. For DTC, designed emails with product imagery perform better. Know your audience.
 
-## Sender and Tone
+## What Open Rates Won't Tell You
 
-- Write from a person, not a brand: "Sarah from Acme" not "The Acme Team"
-- Conversational and direct. Imagine you're writing to one person, not a list.
-- No "Dear valued customer" or "We hope this email finds you well"
-- End with a clear ask, not a vague "let us know if you have questions"
+- Apple Mail Privacy Protection inflates open rates by 30-50% since iOS 15. Open rate is no longer a reliable engagement metric. Click rate and conversion rate are what matter.
+- A/B test subject lines on click rate, not open rate. A subject line that gets opens but not clicks is clickbait that erodes trust.
+- Unsubscribes are healthier than spam complaints. An unsubscribe removes one person. A spam complaint trains ISP filters against your entire domain. Make unsubscribing easy and obvious.
+- Revenue per email sent (RPE) is the metric that captures everything: content quality, targeting, timing, and deliverability in one number. Track it per campaign and per flow.
 
-## Frequency
+## Common Mistakes That Look Smart
 
-- Newsletter: max 2 per week
-- Nurture sequences: one email every 2-3 days
-- Promotional: no more than 1 per week unless it's a time-limited event
-- Always respect unsubscribe and preference settings
-
-## Benchmarks
-
-- Open rate: 20-30% is healthy for B2B. Below 15% means subject lines or list quality need work.
-- Click rate: 2-5% is strong. Below 1% means the content or CTA isn't landing.
-- Unsubscribe rate: above 0.5% per send is a warning sign.
+- Sending to your "most engaged" segment every time trains the algorithm but starves the rest of your list. Rotate segments so you maintain deliverability across your full audience.
+- Personalization beyond first name has diminishing returns unless you have genuinely relevant behavioral data. "We noticed you looked at [product]" works. "Hi [first_name], as a valued [city] customer" is uncanny valley.
+- Re-engagement campaigns that offer discounts to inactive users teach your audience to go dormant until the discount arrives. Re-engage with content or novelty, not price.
